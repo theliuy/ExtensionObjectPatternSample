@@ -1,14 +1,3 @@
-/*
- * Extension Pattern
- * ========================
- * 
- * ConcreteSubject.cpp
- * - Implementation of concrete subject
- *
- * Yang Liu, Wei Gu, Shuang Li
- * Syracuse University
- */
-
 #include "ConcreteSubject.h"
 #include "ConcreteExtension.h"
 
@@ -22,6 +11,8 @@ ConcreteSubject::~ConcreteSubject() {
 }
 
 Extension * ConcreteSubject::GetExtension(const std::type_info & type) {
+	// The following lines show how the extensions
+	// are mapped.
 	if (type == typeid(ConcreteExtension)) {
 		if (0 == extension_)
 			extension_ = new ConcreteExtension();

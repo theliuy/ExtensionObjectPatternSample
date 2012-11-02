@@ -1,14 +1,3 @@
-/*
- * Extension Pattern
- * ========================
- * 
- * ConcreteSubject.cpp
- * - Implementation of concrete subject
- *
- * Yang Liu, Wei Gu, Shuang Li
- * Syracuse University
- */
-
 #include "ConcreteSubject.h"
 #include "ConcreteExtension.h"
 
@@ -22,7 +11,11 @@ ConcreteSubject::~ConcreteSubject() {
 }
 
 Extension * ConcreteSubject::GetExtension(const std::string &extension_name) {
-	if (extension_name == "myextension") {
+
+	// We assume that the subject knows its extension, which is also called
+	// as internal extension. By the way the ExternalExtension project will
+	// show you how to implement the external extension.
+	if (extension_name == "ConcreteExtension") {
 		if (0 == extension_) {
 			extension_ = new ConcreteExtension();
 			extension_->RegisterOwner(this);

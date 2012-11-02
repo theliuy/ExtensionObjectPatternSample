@@ -2,14 +2,18 @@
 #define STORY_NOTEPADEXTENSION 
 
 /*
- * Extension Pattern
- * ========================
+ * Story
+ * ==============
+ * In this demostration, the extension object pattern is 
+ * implemented with a story. A file interface needs to be
+ * extended with NotepadExtension and WordExtension.
  * 
  * NotepadExtension.h
- * - Concrete Extension
+ * - A concrete extension
  *
- * Yang Liu, Wei Gu, Shuang Li
+ * Yang Liu
  * Syracuse University
+ * yliu#theliuy.com
  */
 
 #include "TxtExtension.h"

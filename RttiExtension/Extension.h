@@ -2,14 +2,17 @@
 #define RTTIEXTENSION_EXTENSION
 
 /*
- * Extension Pattern
- * ========================
+ * Extension Object Pattern with RTTI
+ * =================================================
+ * This project demostrates how to use Runtime type
+ * identification to map extension.
  * 
  * Extension.h
- * - A basic extension interface
+ * - Extension Interface
  *
- * Yang Liu, Wei Gu, Shuang Li
+ * Yang Liu
  * Syracuse University
+ * yliu#theliuy.com
  */
 
 class Extension {

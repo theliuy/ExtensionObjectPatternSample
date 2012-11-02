@@ -1,13 +1,3 @@
-/*
- * Extension Pattern
- * ========================
- * 
- * Client.cpp
- *
- * Yang Liu, Wei Gu, Shuang Li
- * Syracuse University
- */
-
 #include "Subject.h"
 #include "ConcreteSubject.h"
 #include "ConcreteExtension.h"

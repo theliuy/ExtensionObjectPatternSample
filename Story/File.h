@@ -2,18 +2,23 @@
 #define STORY_FILE
 
 /*
- * Extension Pattern
- * ========================
+ * Story
+ * ==============
+ * In this demostration, the extension object pattern is 
+ * implemented with a story. A file interface needs to be
+ * extended with NotepadExtension and WordExtension.
  * 
  * File.h
- * - Subject
+ * - The Subject Interface
  *
- * Yang Liu, Wei Gu, Shuang Li
+ * Yang Liu
  * Syracuse University
+ * yliu#theliuy.com
  */
 
+#include <memory>
+
 class Extension;
-class type_info;
 
 class File {
 public:
@@ -24,7 +29,7 @@ public:
 	virtual char GetByte(int index) = 0;
 
 	virtual void AddExtension(Extension *extension) = 0;
-	virtual Extension *GetExtension(const type_info &type) = 0;
+	virtual Extension *GetExtension(const std::type_info &type) = 0;
 
 private:
 };

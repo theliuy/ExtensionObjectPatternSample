@@ -2,20 +2,23 @@
 #define SKELETON_CONCRETESUBJECT
 
 /*
- * Extension Pattern
+ * Skeleton Pattern
  * ========================
+ * Skeleton code of Extension Object
+ * Pattern sample.
  * 
  * ConcreteSubject.h
  * - A concrete subject
  *
- * Yang Liu, Wei Gu, Shuang Li
+ * Yang Liu
  * Syracuse University
+ * yliu#theliuy.com
  */
 
 #include "Subject.h"
-#include "Extension.h"
 #include <string>
 
+class Extension;
 
 class ConcreteSubject : public Subject {
 public:

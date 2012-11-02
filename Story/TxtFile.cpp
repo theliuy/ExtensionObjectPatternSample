@@ -42,7 +42,7 @@ void TxtFile::AddExtension(Extension *extension) {
 		delete extension;
 }
 
-Extension *TxtFile::GetExtension(const type_info &type) {
+Extension *TxtFile::GetExtension(const std::type_info &type) {
 	for (size_t index = 0;
 		index < extensions_.size();
 		++index) {

@@ -1,13 +1,3 @@
-/*
- * Extension Pattern
- * ========================
- * 
- * Client.cpp
- *
- * Yang Liu, Wei Gu, Shuang Li
- * Syracuse University
- */
-
 #include "Subject.h"
 #include "ConcreteSubject.h"
 #include "ConcreteExtension.h"
@@ -21,7 +11,9 @@ int main(int argc, char ** argv) {
 	ConcreteExtension * extension;
 	std::cout << "Extension Demostration using RTTI" << std::endl
 			  << "=====================================" << std::endl; 
+
 	// PAY ATTENSION
+	// We pass the type_info object as identifier
 	extension = dynamic_cast<ConcreteExtension *> (
 		subject->GetExtension(typeid(ConcreteExtension)));
 

@@ -2,14 +2,18 @@
 #define STORY_TXTEXTENSION
 
 /*
- * Extension Pattern
- * ========================
+ * Story
+ * ==============
+ * In this demostration, the extension object pattern is 
+ * implemented with a story. A file interface needs to be
+ * extended with NotepadExtension and WordExtension.
  * 
  * TxtExtension.h
- * - Abstract Extension
+ * - Abstract Extension Interface
  *
- * Yang Liu, Wei Gu, Shuang Li
+ * Yang Liu
  * Syracuse University
+ * yliu#theliuy.com
  */
 
 #include "Extension.h"

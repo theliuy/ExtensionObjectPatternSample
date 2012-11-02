@@ -2,20 +2,23 @@
 #define RTTIEXTENSION_CONCRETESUBJECT
 
 /*
- * Extension Pattern
- * ========================
+ * Extension Object Pattern with RTTI
+ * =================================================
+ * This project demostrates how to use Runtime type
+ * identification to map extension.
  * 
  * ConcreteSubject.h
- * - A concrete subject
+ * - Subject Subject
  *
- * Yang Liu, Wei Gu, Shuang Li
+ * Yang Liu
  * Syracuse University
+ * yliu#theliuy.com
  */
 
 #include "Subject.h"
-#include "Extension.h"
 #include <string>
 
+class Extension;
 
 class ConcreteSubject : public Subject {
 public:

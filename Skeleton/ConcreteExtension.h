@@ -2,14 +2,17 @@
 #define SKELETON_CONCRETEEXTENSION
 
 /*
- * Extension Pattern
+ * Skeleton Pattern
  * ========================
+ * Skeleton code of Extension Object
+ * Pattern sample.
  * 
  * ConcreteExtension.h
- * - A concrete extension
+ * - Concrete Extension
  *
- * Yang Liu, Wei Gu, Shuang Li
+ * Yang Liu
  * Syracuse University
+ * yliu#theliuy.com
  */
 
 #include "Extension.h"
@@ -17,6 +20,11 @@
 class ConcreteExtension : public Extension {
 public:
 	ConcreteExtension();
+
+	// A new function.
+	// By using extension object pattern, it can be
+	// seen as, the existing interface is extended
+	// by this function.
 	void DoSomething();
 
 	void RegisterOwner(Subject *owner);

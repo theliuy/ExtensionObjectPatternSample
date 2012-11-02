@@ -2,14 +2,23 @@
 #define EXTRENALEXTENSION_CONCRETEEXTENSION
 
 /*
- * Extension Pattern
- * ========================
+ * Extension Object Pattern with Extenal Extension
+ * =================================================
+ * In this demostration, the ConcreteSubject does not
+ * know what extensions it will support, but provides
+ * AddExtension and RemoveExtension to maitanence them.
+ * We assume that, one concrete subject won't support
+ * a certain type of concrete extension more than once.
  * 
  * ConcreteExtension.h
- * - A concrete extension
+ * - Concrete Extension
  *
- * Yang Liu, Wei Gu, Shuang Li
+ * For demostration of adding and removing, we have
+ * two concrete extension classes.
+ *
+ * Yang Liu
  * Syracuse University
+ * yliu#theliuy.com
  */
 
 #include "Extension.h"

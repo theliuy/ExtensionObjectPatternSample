@@ -1,13 +1,3 @@
-/*
- * Extension Pattern
- * ========================
- * 
- * Client.cpp
- *
- * Yang Liu, Wei Gu, Shuang Li
- * Syracuse University
- */
-
 #include "Subject.h"
 #include "ConcreteSubject.h"
 #include "ConcreteExtension.h"
@@ -42,8 +32,12 @@ void func(Subject *subject) {
 			  << "func" << std::endl
 			  << "==============" << std::endl;
 
+	// When assign the smart pointer to a new object,
+	// its reference counter increments by one.
 	std::auto_ptr<Extension> extension = subject->GetExtension("ConcreteExtension");
 
+	// If the extension is a smart pointer of base
+	// class the ce will be Null.
 	ConcreteExtension *ce = dynamic_cast<ConcreteExtension *>(extension.get());
 	if (ce) {
 		ce->DoSomething();

@@ -2,14 +2,17 @@
 #define SKELETON_EXTENSION
 
 /*
- * Extension Pattern
+ * Skeleton Pattern
  * ========================
+ * Skeleton code of Extension Object
+ * Pattern sample.
  * 
  * Extension.h
- * - A basic extension interface
+ * - Extension Interface
  *
- * Yang Liu, Wei Gu, Shuang Li
+ * Yang Liu
  * Syracuse University
+ * yliu#theliuy.com
  */
 
 class Subject;

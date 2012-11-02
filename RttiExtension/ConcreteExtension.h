@@ -2,14 +2,17 @@
 #define RTTIEXTENSION_CONCRETEEXTENSION
 
 /*
- * Extension Pattern
- * ========================
+ * Extension Object Pattern with RTTI
+ * =================================================
+ * This project demostrates how to use Runtime type
+ * identification to map extension.
  * 
  * ConcreteExtension.h
- * - A concrete extension
+ * - ConcreteExtension
  *
- * Yang Liu, Wei Gu, Shuang Li
+ * Yang Liu
  * Syracuse University
+ * yliu#theliuy.com
  */
 
 #include "Extension.h"

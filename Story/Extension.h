@@ -2,14 +2,18 @@
 #define STORY_EXTENSION
 
 /*
- * Extension Pattern
- * ========================
+ * Story
+ * ==============
+ * In this demostration, the extension object pattern is 
+ * implemented with a story. A file interface needs to be
+ * extended with NotepadExtension and WordExtension.
  * 
- * Extension.h
- * - Extension
+ * Extesion.h
+ * - Extension Interface
  *
- * Yang Liu, Wei Gu, Shuang Li
+ * Yang Liu
  * Syracuse University
+ * yliu#theliuy.com
  */
 
 class File;
@@ -19,6 +23,9 @@ public:
 	Extension();
 	virtual ~Extension();
 
+	// We implement RegisterOwner in Extension class,
+	// since each concrete extension clss should do it
+	// in this way.
 	virtual void RegisterOwner(File *owner);
 
 protected:

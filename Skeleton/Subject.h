@@ -2,16 +2,17 @@
 #define SKELETON_SUBJECT
 
 /*
- * Extension Pattern
+ * Skeleton Pattern
  * ========================
+ * Skeleton code of Extension Object
+ * Pattern sample.
  * 
  * Subject.h
- * - A subject interface
- * - In this demo, Subject class is an
- *   interface, while it is not nessesary.
+ * - Subject Interface
  *
- * Yang Liu, Wei Gu, Shuang Li
+ * Yang Liu
  * Syracuse University
+ * yliu#theliuy.com
  */
 
 #include <string>
@@ -21,8 +22,13 @@ class Subject {
 public:
 	virtual ~Subject() {};
 
+	// Get Extension by a string
+	// In this sample, the extension is identified by
+	// string. If the Concrete Subject doesn't support 
+	// this extension, it will return 0;
 	virtual Extension * GetExtension(const std::string &extension_name) = 0;
 	
+	// An exisiting function
 	virtual std::string name() = 0;
 private:
 };

@@ -1,16 +1,4 @@
-	/*
- * Extension Pattern
- * ========================
- * 
- * ConcreteSubject.cpp
- * - Implementation of concrete subject
- *
- * Yang Liu, Wei Gu, Shuang Li
- * Syracuse University
- */
-
 #include "ConcreteSubject.h"
-#include "ConcreteExtension.h"
 
 #include <iostream>
 
