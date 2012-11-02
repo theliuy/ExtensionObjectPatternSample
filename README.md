@@ -1,8 +1,8 @@
-This project is to demostrate Extension Object Pattern. Extension Object Pattern is to anticipate that an object's interface needs to be extended in the future. Additional interfaces are defined by extension objects. This pattern is introduced by [Erich Gamma](http://en.wikipedia.org/wiki/Erich_Gamma). For more detail, see his paper, [The Extension Objects Pattern](http://st.inf.tu-dresden.de/Lehre/WS06-07/dpf/gamma96.pdf).
+This project is to demonstrate Extension Object Pattern. Extension Object Pattern is to anticipate that an object's interface needs to be extended in the future. Additional interfaces are defined by extension objects. This pattern is introduced by [Erich Gamma](http://en.wikipedia.org/wiki/Erich_Gamma). For more detail, see his paper, [The Extension Objects Pattern](http://st.inf.tu-dresden.de/Lehre/WS06-07/dpf/gamma96.pdf).
 
 The sample code is used in the presentation of [CSE776 Design Pattern](http://www.lcs.syr.edu/faculty/fawcett/handouts/webpages/CSE776.htm) course, Syracuse University.
 
-This sample is a Visual Studio 2010 project, including five projects, discussing the skeleton and implemetation issues.
+This sample is a Visual Studio 2010 project, including five projects, discussing the skeleton and implementation issues.
 
 ##Skeleton##
 
